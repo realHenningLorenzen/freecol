@@ -20,6 +20,9 @@ parts:
     plugin: dump
     source: http://prdownloads.sourceforge.net/freecol/freecol-0.12.0.zip?download
     source-type: zip
+    build-packages:
+      - ca-certificates
+      - ca-certificates-java
     stage-packages: [openjdk-11-jre]
     override-stage: |
       snapcraftctl stage
