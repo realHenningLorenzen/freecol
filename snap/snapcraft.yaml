@@ -2,15 +2,18 @@ name: freecol # you probably want to 'snapcraft register <name>'
 base: core20
 compression: lzo
 version: '0.12'
-summary: Single-line elevator pitch for your amazing snap # 79 char long summary
-description: |
-  This is my-snap's description. You have a paragraph or two to tell the
-  most important story about your snap. Keep it under 100 words though,
-  we live in tweetspace and your description wants to look good in the snap
-  store.
+summary: Colonization Strategy Game
+description: 'FreeCol is a turn-based strategy game based on the old game
+  Colonization, and similar to Civilization. The objective of the game is
+  to create an independent nation.
+  
+  You start with only a few colonists defying the stormy seas in their search
+  for new land. Will you guide them on the Colonization of a New World?'
+
 
 grade: devel # must be 'stable' to release into candidate/stable channels
 confinement: devmode # use 'strict' once you have the right plugs and slots
+
 
 parts:
   freecol:
