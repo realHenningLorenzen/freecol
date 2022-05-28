@@ -13,5 +13,6 @@ confinement: devmode # use 'strict' once you have the right plugs and slots
 
 parts:
   my-part:
-    # See 'snapcraft plugins'
-    plugin: nil
+    plugin: dump
+    source: http://prdownloads.sourceforge.net/freecol/freecol-0.12.0.zip?download
+    source-type: zip
