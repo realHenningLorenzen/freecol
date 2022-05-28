@@ -31,6 +31,11 @@ parts:
       - -freecol/freecol.cmd
       - -freecol/developer.pdf
 
+  sound-support:
+    plugin: dump
+    source: sound-support/
+    stage-packages: [libasound2, libasound2-plugins, libpulse0]
+
 
 apps:
   freecol:
@@ -39,3 +44,14 @@ apps:
     environment:
       JAVA_HOME: $SNAP/usr/lib/jvm/java-11-openjdk-amd64
       PATH: $JAVA_HOME/bin:$PATH
+      PULSE_PROP_OVERRIDE: media.role='game'
+      ALSA_CONFIG_PATH: $SNAP/asound.conf
+    plugs:
+      - audio-playback
+      - pulseaudio
+
+
+layout:
+  /usr/lib/$SNAPCRAFT_ARCH_TRIPLET/alsa-lib:
+    bind: $SNAP/usr/lib/$SNAPCRAFT_ARCH_TRIPLET/alsa-lib
+
