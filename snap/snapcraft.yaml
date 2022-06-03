@@ -1,7 +1,7 @@
 name: freecol # you probably want to 'snapcraft register <name>'
 base: core20
 compression: lzo
-version: '0.12'
+version: '0.12.0+git-20220615'
 summary: Colonization Strategy Game
 description: 'FreeCol is a turn-based strategy game based on the old game
   Colonization, and similar to Civilization. The objective of the game is
@@ -18,7 +18,7 @@ confinement: strict # use 'strict' once you have the right plugs and slots
 parts:
   freecol:
     plugin: dump
-    source: http://prdownloads.sourceforge.net/freecol/freecol-0.12.0.zip?download
+    source: https://github.com/FreeCol/freecol/releases/download/latest/freecol-git-20220615.zip
     source-type: zip
     build-packages:
       - ca-certificates
