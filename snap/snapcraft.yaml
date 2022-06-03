@@ -49,6 +49,7 @@ apps:
     plugs:
       - audio-playback
       - pulseaudio
+      - network-bind
 
 
 layout:
