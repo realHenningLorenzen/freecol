@@ -24,12 +24,15 @@ parts:
       - ca-certificates
       - ca-certificates-java
     stage-packages: [openjdk-11-jre]
-    override-stage: |
-      snapcraftctl stage
-      chmod +x freecol/freecol
     prime:
       - -freecol/freecol.cmd
       - -freecol/developer.pdf
+      - -freecol/freecol
+
+  freecol-launch:
+    plugin: dump
+    source: launcher/
+    after: [freecol]
 
   sound-support:
     plugin: dump
@@ -40,7 +43,7 @@ parts:
 apps:
   freecol:
     extensions: [gnome-3-38]
-    command: freecol/freecol
+    command: freecol-launch.sh
     environment:
       JAVA_HOME: $SNAP/usr/lib/jvm/java-11-openjdk-amd64
       PATH: $JAVA_HOME/bin:$PATH
