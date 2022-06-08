@@ -53,6 +53,7 @@ apps:
       - audio-playback
       - pulseaudio
       - network-bind
+      - home
 
 
 layout:
