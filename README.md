@@ -89,3 +89,17 @@ If you have any questions, [post in the Snapcraft forum](https://forum.snapcraft
 | :---: |
 | [Upstream Name](https://github.com/upstreamname) |
 -->
+
+## Notes
+
+Upstream:
+* https://www.freecol.org
+* https://github.com/FreeCol/freecol
+
+Beware, this is my first snap ⚠️ 😄
+
+### Motivation
+* outdated version in
+  * Ubuntu APT
+  * FlatHub
+* learn how to snap
