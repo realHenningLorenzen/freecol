@@ -28,6 +28,10 @@ parts:
       - -freecol/freecol.cmd
       - -freecol/developer.pdf
       - -freecol/freecol
+    override-prime: |
+      snapcraftctl prime
+      sed -i "s/^Icon=data\/freecol.png/Icon=freecol\/data\/freecol.png/" freecol/freecol.desktop
+      sed -i "s/^Exec=freecol/Exec=freecol-launch.sh/" freecol/freecol.desktop
 
   freecol-launch:
     plugin: dump
@@ -54,6 +58,7 @@ apps:
       - pulseaudio
       - network-bind
       - home
+    desktop: freecol/freecol.desktop
 
 
 layout:
