@@ -12,7 +12,7 @@ description: 'FreeCol is a turn-based strategy game based on the old game
 
 
 grade: devel # must be 'stable' to release into candidate/stable channels
-confinement: strict # use 'strict' once you have the right plugs and slots
+confinement: strict
 
 
 parts:
