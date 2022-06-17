@@ -4,7 +4,7 @@
   FreeCol
 </h1>
 
-<p align="center"><b>This is the snap for FreeCol</b>, <i>“Single-line elevator pitch for your amazing snap”</i>. It works on Ubuntu, Fedora, Debian, and other major Linux
+<p align="center"><b>This is the snap for <a href="https://github.com/FreeCol/freecol">FreeCol</a> </b>, <i>“Single-line elevator pitch for your amazing snap”</i>. It works on Ubuntu, Fedora, Debian, and other major Linux.
 distributions.</p>
 
 <!-- Uncomment and modify this when you are provided a build status badge
@@ -89,17 +89,3 @@ If you have any questions, [post in the Snapcraft forum](https://forum.snapcraft
 | :---: |
 | [Upstream Name](https://github.com/upstreamname) |
 -->
-
-## Notes
-
-Upstream:
-* https://www.freecol.org
-* https://github.com/FreeCol/freecol
-
-Beware, this is my first snap ⚠️ 😄
-
-### Motivation
-* outdated version in
-  * Ubuntu APT
-  * FlatHub
-* learn how to snap
