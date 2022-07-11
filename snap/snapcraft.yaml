@@ -32,6 +32,8 @@ parts:
       snapcraftctl prime
       sed -i "s/^Icon=data\/freecol.png/Icon=freecol\/data\/freecol.png/" freecol/freecol.desktop
       sed -i "s/^Exec=freecol/Exec=freecol-launch.sh/" freecol/freecol.desktop
+      rm usr/lib/jvm/java-11-openjdk-amd64/lib/security/blacklisted.certs
+      ln --symbolic etc/java-11-openjdk/security/blacklisted.certs usr/lib/jvm/java-11-openjdk-amd64/lib/security/blacklisted.certs
 
   freecol-launch:
     plugin: dump
